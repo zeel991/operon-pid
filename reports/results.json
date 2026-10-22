@@ -1,0 +1,271 @@
+{
+ "UER-1234567": {
+  "tags": {
+   "equipment": {
+    "expected": 16,
+    "found": 16,
+    "correct": 16,
+    "missed": [],
+    "extra": [],
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "instrument": {
+    "expected": 40,
+    "found": 40,
+    "correct": 40,
+    "missed": [],
+    "extra": [],
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "line": {
+    "expected": 48,
+    "found": 45,
+    "correct": 45,
+    "missed": [
+     "LA01-LR004",
+     "TA99-LR003",
+     "TA99-LR034"
+    ],
+    "extra": [],
+    "precision": 1.0,
+    "recall": 0.9375
+   },
+   "valve": {
+    "expected": 74,
+    "found": 73,
+    "correct": 73,
+    "missed": [
+     "TA99-AB001"
+    ],
+    "extra": [],
+    "precision": 1.0,
+    "recall": 0.9864864864864865
+   }
+  },
+  "fields": {
+   "instrument function": {
+    "checked": 40,
+    "correct": 40,
+    "mismatches": []
+   },
+   "line fluid": {
+    "checked": 44,
+    "correct": 44,
+    "mismatches": []
+   },
+   "line dn": {
+    "checked": 44,
+    "correct": 44,
+    "mismatches": []
+   },
+   "line pn": {
+    "checked": 44,
+    "correct": 44,
+    "mismatches": []
+   },
+   "line piping_class": {
+    "checked": 44,
+    "correct": 44,
+    "mismatches": []
+   },
+   "line gasket": {
+    "checked": 44,
+    "correct": 44,
+    "mismatches": []
+   },
+   "line valve_class": {
+    "checked": 44,
+    "correct": 44,
+    "mismatches": []
+   }
+  },
+  "connections": {
+   "valve on line (label on its run)": {
+    "checked": 33,
+    "correct": 32,
+    "mismatches": [
+     "TA99-AB011: traced TA99-LR009, list TA99-LR033"
+    ]
+   },
+   "valve on line (inherited)": {
+    "checked": 27,
+    "correct": 24,
+    "mismatches": [
+     "TA99-AB016: traced TA99-LR001, list TA99-LR034",
+     "TA99-AB012: traced TA99-LR009, list TA99-LR033",
+     "TA99-AB015: traced TA99-LR001, list TA99-LR034"
+    ]
+   },
+   "valve on line (unresolved)": {
+    "count": 11,
+    "no symbol matched": []
+   },
+   "line ends at equipment": {
+    "expected": 42,
+    "missed": [
+     "TA99-LR027 -> TA99-WA010",
+     "TA99-LR035 -> TA99-PA102",
+     "TA99-LR037 -> TA99-PA105",
+     "TA99-LR038 -> TA99-PA105",
+     "TA99-LR039 -> TA99-PA102"
+    ],
+    "not checkable (list has no From/To)": [
+     "TA99-LR008 -> TA99-WA007",
+     "TA99-LR009 -> TA99-KA002",
+     "TA99-LR009 -> TA99-PA100",
+     "TA99-LR009 -> TA99-PA101",
+     "TA99-LR016 -> TA99-BA100",
+     "TA99-LR016 -> TA99-PA103",
+     "TA99-LR032 -> TA99-BA101",
+     "TA99-LR041 -> TA99-BA100",
+     "TA99-LR047 -> TA99-KA002",
+     "TA99-LR047 -> TA99-WA007",
+     "TA99-LR050 -> TA99-BA100",
+     "TA99-LR050 -> TA99-PA103"
+    ],
+    "labelled run": {
+     "found": 28,
+     "correct": 28,
+     "wrong": []
+    },
+    "branch run": {
+     "found": 11,
+     "correct": 9,
+     "wrong": [
+      "TA99-LR001 -> TA99-PA100",
+      "TA99-LR001 -> TA99-PA101"
+     ]
+    }
+   }
+  }
+ },
+ "UER-2345678": {
+  "tags": {
+   "equipment": {
+    "expected": 4,
+    "found": 4,
+    "correct": 4,
+    "missed": [],
+    "extra": [],
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "instrument": {
+    "expected": 6,
+    "found": 6,
+    "correct": 6,
+    "missed": [],
+    "extra": [],
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "line": {
+    "expected": 19,
+    "found": 4,
+    "correct": 4,
+    "missed": [
+     "LA01-LR003",
+     "LA01-LR005",
+     "LA01-LR006",
+     "LA01-LR019",
+     "LA01-LR024",
+     "LA01-LR030",
+     "LA01-LR045",
+     "TA99-LR004",
+     "TA99-LR007",
+     "TA99-LR020",
+     "TA99-LR027",
+     "TA99-LR031",
+     "TA99-LR039",
+     "TA99-LR044",
+     "TA99-LR046"
+    ],
+    "extra": [],
+    "precision": 1.0,
+    "recall": 0.21052631578947367
+   },
+   "valve": {
+    "expected": 6,
+    "found": 6,
+    "correct": 6,
+    "missed": [],
+    "extra": [],
+    "precision": 1.0,
+    "recall": 1.0
+   }
+  },
+  "fields": {
+   "instrument function": {
+    "checked": 6,
+    "correct": 6,
+    "mismatches": []
+   },
+   "line fluid": {
+    "checked": 4,
+    "correct": 4,
+    "mismatches": []
+   },
+   "line dn": {
+    "checked": 4,
+    "correct": 4,
+    "mismatches": []
+   },
+   "line pn": {
+    "checked": 4,
+    "correct": 4,
+    "mismatches": []
+   },
+   "line piping_class": {
+    "checked": 4,
+    "correct": 4,
+    "mismatches": []
+   },
+   "line gasket": {
+    "checked": 4,
+    "correct": 4,
+    "mismatches": []
+   },
+   "line valve_class": {
+    "checked": 4,
+    "correct": 4,
+    "mismatches": []
+   }
+  },
+  "connections": {
+   "valve on line (label on its run)": {
+    "checked": 0,
+    "correct": 0,
+    "mismatches": []
+   },
+   "valve on line (inherited)": {
+    "checked": 6,
+    "correct": 6,
+    "mismatches": []
+   },
+   "valve on line (unresolved)": {
+    "count": 0,
+    "no symbol matched": []
+   },
+   "line ends at equipment": {
+    "expected": 6,
+    "missed": [],
+    "not checkable (list has no From/To)": [],
+    "labelled run": {
+     "found": 1,
+     "correct": 1,
+     "wrong": []
+    },
+    "branch run": {
+     "found": 7,
+     "correct": 5,
+     "wrong": [
+      "LA01-LR002 -> LA01-BA001",
+      "TA99-LR003 -> LA01-RA001"
+     ]
+    }
+   }
+  }
+ }
+}

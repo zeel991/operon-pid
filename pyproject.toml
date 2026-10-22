@@ -1,0 +1,26 @@
+[project]
+name = "operon-pid"
+version = "0.1.0"
+description = "Vector P&IDs to a queryable plant model, scored against the owner's lists"
+readme = "README.md"
+authors = [
+    { name = "zeel991", email = "darjizeel587@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pymupdf>=2.0",
+    "xlrd>=2.0.2",
+]
+
+[project.scripts]
+operon-pid = "operon_pid.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

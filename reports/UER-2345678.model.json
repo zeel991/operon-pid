@@ -1,0 +1,158 @@
+{
+ "sheet": "UER-2345678",
+ "subprocess": "LA01",
+ "equipment": {
+  "LA01-PA002": {
+   "tag": "PA002",
+   "box": [
+    726.5,
+    875.9,
+    769.0,
+    918.4
+   ]
+  },
+  "LA01-PA001": {
+   "tag": "PA001",
+   "box": [
+    726.5,
+    805.1,
+    769.0,
+    847.6
+   ]
+  },
+  "LA01-BA001": {
+   "tag": "BA001",
+   "box": [
+    397.0,
+    698.8,
+    453.6,
+    783.8
+   ]
+  },
+  "LA01-RA001": {
+   "tag": "RA001",
+   "box": [
+    1176.5,
+    687.3,
+    1303.9,
+    897.1
+   ]
+  }
+ },
+ "instruments": {
+  "LA01-Y0001": {
+   "loop": "Y0001",
+   "function": "YS"
+  },
+  "LA01-U0001": {
+   "loop": "U0001",
+   "function": "US"
+  },
+  "LA01-F0001": {
+   "loop": "F0001",
+   "function": "FIC"
+  },
+  "LA01-P0001": {
+   "loop": "P0001",
+   "function": "PIC"
+  },
+  "LA01-M0001": {
+   "loop": "M0001",
+   "function": "MS"
+  },
+  "LA01-L0001": {
+   "loop": "L0001",
+   "function": "LIC"
+  }
+ },
+ "lines": {
+  "TA99-LR003": {
+   "tag": "LR003",
+   "fluid": "22010",
+   "dn": "80",
+   "pn": "10",
+   "piping_class": "CA01B1",
+   "gasket": "NU",
+   "valve_class": "104",
+   "ends": [],
+   "branch_ends": [
+    "LA01-RA001"
+   ]
+  },
+  "LA01-LR001": {
+   "tag": "LR001",
+   "fluid": "10000",
+   "dn": "100",
+   "pn": "10",
+   "piping_class": "HF01B1",
+   "gasket": "RA",
+   "valve_class": "101",
+   "ends": [],
+   "branch_ends": [
+    "LA01-BA001",
+    "LA01-PA001",
+    "LA01-PA002"
+   ]
+  },
+  "LA01-LR002": {
+   "tag": "LR002",
+   "fluid": "10000",
+   "dn": "100",
+   "pn": "10",
+   "piping_class": "HF01B1",
+   "gasket": "RA",
+   "valve_class": "101",
+   "ends": [
+    "LA01-RA001"
+   ],
+   "branch_ends": [
+    "LA01-BA001",
+    "LA01-PA001",
+    "LA01-PA002"
+   ]
+  },
+  "LA01-LR043": {
+   "tag": "LR043",
+   "fluid": "10000",
+   "dn": "25",
+   "pn": "10",
+   "piping_class": "H1200",
+   "gasket": "NV",
+   "valve_class": "221",
+   "ends": [],
+   "branch_ends": []
+  }
+ },
+ "valves": {
+  "LA01-AB003": {
+   "tag": "AB003",
+   "line": "LA01-LR001",
+   "found_by": "inherited"
+  },
+  "LA01-AB004": {
+   "tag": "AB004",
+   "line": "LA01-LR001",
+   "found_by": "inherited"
+  },
+  "LA01-AB005": {
+   "tag": "AB005",
+   "line": "LA01-LR002",
+   "found_by": "inherited"
+  },
+  "LA01-AB006": {
+   "tag": "AB006",
+   "line": "LA01-LR002",
+   "found_by": "inherited"
+  },
+  "LA01-AB002": {
+   "tag": "AB002",
+   "line": "LA01-LR002",
+   "found_by": "inherited"
+  },
+  "LA01-AB001": {
+   "tag": "AB001",
+   "line": "LA01-LR002",
+   "found_by": "inherited"
+  }
+ }
+}
